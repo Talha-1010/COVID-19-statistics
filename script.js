@@ -12,13 +12,14 @@
     var dataArray;
 
     function showInfo(data, tabletop) {
+     
       alert('Successfully processed!')
       //  console.log(data[0]);
       
        google.charts.load('current', {'packages':['corechart']});
        google.charts.setOnLoadCallback(drawChart);
       //  console.log(data[0].Date_reported);
-
+        //console.log(data.toArray())
         dataArray = new Array(data.length);
       
        
@@ -73,7 +74,7 @@
       chart.draw(data, options);
 
       localStorage.setItem("key",chart.container.innerHTML);
-      console.log(chart);
+      //console.log(chart);
 
     }
 
