@@ -25,14 +25,14 @@
        
         // Loop to create 2D array using 1D array
         for (var i = 0; i < dataArray.length; i++) {
-          dataArray[i] = new Array(2);
+          dataArray[i] = new Array(3);
         }
           
         var h = 0;
           
         // Loop to initialize 2D array elements.
         for (var i = 0; i < dataArray.length; i++) {
-            for (var j = 0; j < 2; j++) {
+            for (var j = 0; j < 3; j++) {
               
               if(i==0 && j==0)
               {
@@ -42,6 +42,10 @@
               {
                 dataArray[i][j] =  "New_cases";
               }
+              else if(i==0 && j==2)
+              {
+                dataArray[i][j] =  "New_deaths";
+              }
               else if( i>0 && j==0)
               {
                 dataArray[i][j] = data[i].Date_reported;
@@ -49,6 +53,10 @@
               else if( i>0 && j==1)
               {
                 dataArray[i][j] = Number(data[i].New_cases);
+              }
+              else if( i>0 && j==2)
+              {
+                dataArray[i][j] = Number(data[i].New_deaths);
               }
               
             }
