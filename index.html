@@ -5,42 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<style>
-    *{
-        margin: 0%;
-        padding: 0%;
-    }
-    body  {
-      background-image: url("https://covid.gov.pk/v2/img/header-b.png");
-      background-color: white;
-      background-position: right;
-      background-size: 30%;
-      background-repeat:no-repeat;
-    }
-    header{
-        padding: 15vh;
-    }
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='style.css'>
 
-</style>
+</head>
+
 <body>
     
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     
-    
-        <img src="https://covid.gov.pk/v2/img/logo.png" alt="logo" >
+      <div id="logo">
+        <img src="https://covid.gov.pk/v2/img/logo.png" alt="logo" width="150px" height="50px">
+      </div>  
+       
     
     <header>
-        <h4 style="color: green;">- KNOW ABOUT COVID-19</h4>
-        <h4>See the Realtime Pakistan </h3>
-        <h1>COVID-19 Situation!</h1>
-        <p>The coronavirus, or COVID-19, is inciting panic for a number of reasons. It's a new virus, meaning no one has immunity.It is highly contagious, meaning it spreads fast. Its novelty means that scientists aren't completely sure as to how it behaves since they have very little history to go on.</p>    
+        <div class="headings">
+            <h4 style="color: green;">- KNOW ABOUT COVID-19</h4>
+            <h4>See the Realtime Pakistan </h3>
+            <h1><strong>COVID-19 Situation!</strong></h1>
+            <p>The coronavirus, or COVID-19, is inciting panic for a number of reasons. 
+                It's a new virus, meaning no one has immunity.<br>It is highly contagious, 
+                meaning it spreads fast. Its novelty means that scientists aren't completely sure as to how it behaves<br> 
+                since they have very little history to go on.</p>
+        </div>
+        <div class="map">
+            <img src="https://covid.gov.pk/v2/img/header-b.png" alt="map" width="300" height="300" >
+        </div>
+            
     </header>
     
     <main>
-        <div id="curve_chart" style="width: 900px; height: 500px"  ></div>
+        <div id="curve_chart"  ></div>
     </main>
    
     
