@@ -6,12 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    body  {
+      background-image: url("https://covid.gov.pk/v2/img/header-b.png");
+      background-color: white;
+      background-position: right;
+      background-size: 30%;
+      background-repeat:no-repeat;
+    }
+    header{
+        padding: 15vh;
+    }
+    
+
+</style>
 <body>
     
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+    
+    
+        <img src="https://covid.gov.pk/v2/img/logo.png" alt="logo" >
+    
+    <header>
+        <h4 style="color: green;">- KNOW ABOUT COVID-19</h4>
+        <h4>See the Realtime Pakistan </h3>
+        <h1>COVID-19 Situation!</h1>
+        <p>The coronavirus, or COVID-19, is inciting panic for a number of reasons. It's a new virus, meaning no one has immunity.It is highly contagious, meaning it spreads fast. Its novelty means that scientists aren't completely sure as to how it behaves since they have very little history to go on.</p>    
+    </header>
+    
+    <main>
+        <div id="curve_chart" style="width: 900px; height: 500px"  ></div>
+    </main>
+   
     
     <script src="script.js"></script>
 </body>
