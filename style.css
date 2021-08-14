@@ -1,0 +1,27 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body  {
+
+    background-color: white;
+    background-position: right;
+    background-size: 30%;
+    background-repeat:no-repeat;
+    display: block;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+header{
+    background-color: lightgrey;
+    padding-left: 15vh;
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+#logo{
+    margin-left: 5vw;
+}
+   
+
