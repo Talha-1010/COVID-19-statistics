@@ -80,6 +80,7 @@
     //assigning local storage
     var chart = document.getElementById("curve_chart");
     chart.innerHTML =localStorage.getItem("key");
+    
 
 
     
