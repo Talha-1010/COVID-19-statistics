@@ -20,6 +20,11 @@ header{
     flex-wrap: wrap;
     
 }
+main{
+    display: block;
+    width: 900px;
+    height: 500px;
+}
 #logo{
     margin-left: 5vw;
 }
